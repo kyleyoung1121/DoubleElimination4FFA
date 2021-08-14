@@ -83,22 +83,19 @@ def FindResults(bracket, groupNumStart = 1):
 		my_file = open("log.txt", "a")
 		if bracket == loserBracket:
 			# If the bracket selected is the loser bracket, reflect that in the txt
-			my_file.write("LB: " + winnerNames[0] + " and " + winnerNames[1] + " defeat " + loserNames[0] + " and " + loserNames[1] + "\n")
-			my_file.close()
+			my_file.write("LB: ")
 		else:
-			print("DEBUG: winnerNames:")
-			print(winnerNames)
-			print("DEBUG: loserNames:")
-			print(loserNames)
-			my_file.write("WB: " + winnerNames[0] + " and " + winnerNames[1] + " defeat " + loserNames[0])
-			if len(loserNames) > 1:
-				my_file.write(" and " + loserNames[1] + "\n")
-			else:
-				my_file.write("\n")
-			my_file.close()
+			my_file.write("WB: ")
+		my_file.write(winnerNames[0] + " and " + winnerNames[1] + " defeat " + loserNames[0])
+		if len(loserNames) > 1:
+			my_file.write(" and " + loserNames[1] + "\n")
+		else:
+			my_file.write("\n")
+		my_file.close()
+		
 
 def GroupsFromList(list, bracket):
-	# random.shuffle(list) # This line of code shuffles the players for a better shot at not running into the same player over and over
+	random.shuffle(list) # This line of code shuffles the players for a better shot at not running into the same player over and over
 	i = 0
 
 	if len(list) == 0:
@@ -163,7 +160,7 @@ current_time = now.strftime("%H:%M:%S")
 my_file = open("log.txt", "a")
 my_file.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 my_file.write("New log at " + str(current_time) + "\n")
-my_file.write("This log will not whether the match up was in the winners bracket (WB) or the losers bracket (LB). The player that places first will be listed first, followed by second place.\n\n")
+my_file.write("This log will note whether the match up was in the winners bracket (WB) or the losers bracket (LB). The player that places first will be listed first, followed by second place.\n\n")
 my_file.close()
 
 # Take in all players and randomize that list.
@@ -174,7 +171,7 @@ while 1:
 		break	
 	buildplayer = player(userInput)
 	playerList.append(buildplayer)
-#random.shuffle(playerList)
+random.shuffle(playerList)
 if len(playerList) < 6:
 	print("ERROR: Must be used on groups of 6 or more.")
 	quit()

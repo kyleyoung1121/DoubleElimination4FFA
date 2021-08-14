@@ -1,19 +1,1 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New log at 15:36:41
-This log will not whether the match up was in the winners bracket (WB) or the losers bracket (LB). The player that places first will be listed first, followed by second place.
 
-WB: 1 and 2 defeat 3
-WB: 5 and 6 defeat 4
-WB: 1 and 2 defeat 5 and 6
-LB: 3 and 4 defeat 5 and 6
-WB: 1 has triumphed over all in the final match up!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New log at 15:40:07
-This log will not whether the match up was in the winners bracket (WB) or the losers bracket (LB). The player that places first will be listed first, followed by second place.
-
-WB: 1 and 2 defeat 3 and 4
-WB: 5 and 6 defeat 7 and 8
-WB: 1 and 2 defeat 5 and 6
-LB: 3 and 4 defeat 7 and 8
-LB: 3 and 4 defeat 5 and 6
-WB: 1 has triumphed over all in the final match up!
